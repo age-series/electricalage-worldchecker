@@ -197,12 +197,15 @@ def parseRegSix(node):
 
 def parseRegTrans(node):
 
-    print("==============")
+    #print("==============")
 
     eid = node["eid"]
     element = node["element"]
-    print(eid)
-    pprint(element)
+    #print(eid)
+    if (eid == 129):
+        pprint(node)
+
+    return True
 
 def parseRegComp(node):
     # TODO: check ioGateXUc and the process high impedance and may be the U in process.
